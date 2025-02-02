@@ -1,0 +1,69 @@
+# Compiled class files
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+logs/
+*.log
+log/
+nohup.out
+
+# Temporary files
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Ignore Maven & Gradle cache
+.mvn/
+target/
+build/
+!src/main/resources/application*.properties
+
+# Ignore dependency directory
+lib/
+bin/
+
+# Ignore IntelliJ / Eclipse / VS Code IDE settings
+.idea/
+*.iml
+.vscode/
+*.classpath
+*.project
+*.settings/
+
+# Ignore test coverage & reports
+test-output/
+coverage/
+jacoco.exec
+*.ec
+
+# Ignore local environment settings
+.env
+*.env
+.env.local
+.env.development
+.env.production
+
+# Ignore database files (H2, SQLite, etc.)
+*.db
+*.sql
+*.sqlite
+
+# Ignore AWS credentials & sensitive files
+.aws/
+config/
+credentials
+
+# Ignore node_modules (if using frontend)
+node_modules/
+
+# Ignore AWS deployment artifacts
+.elasticbeanstalk/
+.aws-sam/
+
+# Ignore LiveReload and other debug tools
+.livereload
+.sass-cache
