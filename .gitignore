@@ -1,32 +1,46 @@
-# Compiled class files
+# ===========================================
+# ✅ Compiled files
+# ===========================================
 *.class
 *.jar
 *.war
 *.ear
 
-# Logs
+# ===========================================
+# ✅ Logs
+# ===========================================
 logs/
 *.log
 log/
 nohup.out
 
-# Temporary files
+# ===========================================
+# ✅ Temporary files
+# ===========================================
 *.swp
 *.swo
 .DS_Store
 Thumbs.db
 
-# Ignore Maven & Gradle cache
+# ===========================================
+# ✅ Maven & Gradle build directories
+# ===========================================
 .mvn/
 target/
 build/
-!src/main/resources/application*.properties
+.gradle/
+.gradle-cache/
+!src/main/resources/application-example.properties
 
-# Ignore dependency directory
+# ===========================================
+# ✅ Ignore dependency directories
+# ===========================================
 lib/
 bin/
 
-# Ignore IntelliJ / Eclipse / VS Code IDE settings
+# ===========================================
+# ✅ IDE settings (IntelliJ, Eclipse, VS Code)
+# ===========================================
 .idea/
 *.iml
 .vscode/
@@ -34,36 +48,62 @@ bin/
 *.project
 *.settings/
 
-# Ignore test coverage & reports
+# ===========================================
+# ✅ Test coverage & reports
+# ===========================================
 test-output/
 coverage/
 jacoco.exec
 *.ec
+reports/
 
-# Ignore local environment settings
+# ===========================================
+# ✅ Local environment settings & secrets
+# ===========================================
 .env
 *.env
 .env.local
 .env.development
 .env.production
 
-# Ignore database files (H2, SQLite, etc.)
+# ===========================================
+# ✅ Database files (H2, SQLite, PostgreSQL, MySQL dumps)
+# ===========================================
 *.db
 *.sql
 *.sqlite
+db/
 
-# Ignore AWS credentials & sensitive files
+# ===========================================
+# ✅ Ignore application configuration files
+# ===========================================
+src/main/resources/application.properties
+src/main/resources/application-*.properties
+src/main/resources/config/
+config/
+secrets/
+private/
+
+# ===========================================
+# ✅ AWS Credentials & Deployment Artifacts
+# ===========================================
 .aws/
 config/
 credentials
-
-# Ignore node_modules (if using frontend)
-node_modules/
-
-# Ignore AWS deployment artifacts
-.elasticbeanstalk/
+elasticbeanstalk/
 .aws-sam/
 
-# Ignore LiveReload and other debug tools
+# ===========================================
+# ✅ Frontend (React, Angular, Vue, Node.js) files
+# ===========================================
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+dist/
+
+# ===========================================
+# ✅ LiveReload & Debugging tools
+# ===========================================
 .livereload
 .sass-cache
